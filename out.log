@@ -1,0 +1,211 @@
+[0;32minfo: Loading facts in /etc/puppet/modules/staging/lib/facter/staging_http_get.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/staging/lib/facter/staging_windir.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/mysql/lib/facter/mysql_version.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/mysql/lib/facter/mysql_server_id.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/stdlib/lib/facter/puppet_vardir.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/stdlib/lib/facter/pe_version.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/stdlib/lib/facter/root_home.rb[0m
+[0;32minfo: Loading facts in /etc/puppet/modules/stdlib/lib/facter/facter_dot_d.rb[0m
+[0;33mwarning: Could not retrieve fact fqdn[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server from mysql/server into production[0m
+[0;33mwarning: Host is missing hostname and/or domain: vm1[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/params.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::params from mysql/params into production[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/root_password.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::root_password from mysql/server/root_password into production[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/db.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::db from mysql/db into production[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/install.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::install from mysql/server/install into production[0m
+[0;37mdebug: Puppet::Type::Package::ProviderRpm: Executing '/bin/rpm --version'[0m
+[0;37mdebug: Puppet::Type::Package::ProviderUrpmi: Executing '/bin/rpm -ql rpm'[0m
+[0;37mdebug: Puppet::Type::Package::ProviderAptrpm: Executing '/bin/rpm -ql rpm'[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/bin/rpm --version'[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/config.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::config from mysql/server/config into production[0m
+[0;37mdebug: Failed to load library 'rubygems' for feature 'rubygems'[0m
+[0;37mdebug: Scope(Class[Mysql::Server::Config]): Retrieving template mysql/my.cnf.erb[0m
+[0;37mdebug: template[/etc/puppet/modules/mysql/templates/my.cnf.erb]: Bound template variables for /etc/puppet/modules/mysql/templates/my.cnf.erb in 0.00 seconds[0m
+[0;37mdebug: template[/etc/puppet/modules/mysql/templates/my.cnf.erb]: Interpolated template /etc/puppet/modules/mysql/templates/my.cnf.erb in 0.00 seconds[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/installdb.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::installdb from mysql/server/installdb into production[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/service.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::service from mysql/server/service into production[0m
+[0;37mdebug: importing '/etc/puppet/modules/mysql/manifests/server/providers.pp' in environment production[0m
+[0;37mdebug: Automatically imported mysql::server::providers from mysql/server/providers into production[0m
+[0;37mdebug: Adding relationship from File[mysql-config-file] to Service[mysqld] with 'before'[0m
+[0;37mdebug: Adding relationship from Anchor[mysql::server::start] to Class[Mysql::Server::Install] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Install] to Class[Mysql::Server::Config] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Config] to Class[Mysql::Server::Installdb] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Installdb] to Class[Mysql::Server::Service] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Service] to Class[Mysql::Server::Root_password] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Root_password] to Class[Mysql::Server::Providers] with 'before'[0m
+[0;37mdebug: Adding relationship from Class[Mysql::Server::Providers] to Anchor[mysql::server::end] with 'before'[0m
+[0;37mdebug: File[/etc/my.cnf.d]: Adding default for group[0m
+[0;37mdebug: File[/etc/my.cnf.d]: Adding default for owner[0m
+[0;37mdebug: File[mysql-config-file]: Adding default for group[0m
+[0;37mdebug: File[mysql-config-file]: Adding default for owner[0m
+[0;37mdebug: Puppet::Type::Package::ProviderZypper: file /usr/bin/zypper does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderUp2date: file /usr/sbin/up2date-nox does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderSunfreeware: file pkg-get does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderPortage: file /usr/bin/emerge does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderAptrpm: file apt-get does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderRug: file /usr/bin/rug does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderApt: file /usr/bin/apt-get does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderSun: file /usr/bin/pkginfo does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderPacman: file /usr/bin/pacman does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderUrpmi: file urpmi does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderOpenbsd: file pkg_delete does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderFink: file /sw/bin/fink does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderPorts: file /usr/local/sbin/portversion does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderDpkg: file /usr/bin/dpkg does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderAix: file /usr/bin/lslpp does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderHpux: file /usr/sbin/swinstall does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderFreebsd: file /usr/sbin/pkg_delete does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderNim: file /usr/sbin/nimclient does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderPkg: file /usr/bin/pkg does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderPortupgrade: file /usr/local/sbin/portinstall does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderGem: file gem does not exist[0m
+[0;37mdebug: Puppet::Type::Package::ProviderAptitude: file /usr/bin/aptitude does not exist[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: file mysql does not exist[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: file mysql does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderDaemontools: file /usr/bin/svc does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderSystemd: file /bin/systemctl does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderDebian: file /usr/sbin/update-rc.d does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderGentoo: file /sbin/rc-update does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderOpenrc: file /sbin/rc-service does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderLaunchd: file /bin/launchctl does not exist[0m
+[0;37mdebug: Puppet::Type::Service::ProviderRunit: file /usr/bin/sv does not exist[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: file mysql does not exist[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: file mysql does not exist[0m
+[0;37mdebug: Creating default schedules[0m
+[0;37mdebug: Puppet::Type::User::ProviderDirectoryservice: file /usr/bin/dscl does not exist[0m
+[0;37mdebug: Failed to load library 'ldap' for feature 'ldap'[0m
+[0;37mdebug: Puppet::Type::User::ProviderLdap: feature ldap is missing[0m
+[0;37mdebug: Puppet::Type::User::ProviderPw: file pw does not exist[0m
+[0;37mdebug: Puppet::Type::User::ProviderUser_role_add: file roleadd does not exist[0m
+[0;37mdebug: /File[/var/lib/puppet/state/last_run_summary.yaml]: Autorequiring File[/var/lib/puppet/state][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/certs/ca.pem]: Autorequiring File[/var/lib/puppet/ssl/certs][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/certs/vm1.pem]: Autorequiring File[/var/lib/puppet/ssl/certs][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/public_keys]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/crl.pem]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/private_keys]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/lib]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/state/resources.txt]: Autorequiring File[/var/lib/puppet/state][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/certificate_requests]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/client_yaml]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/certs]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/state/graphs]: Autorequiring File[/var/lib/puppet/state][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/private_keys/vm1.pem]: Autorequiring File[/var/lib/puppet/ssl/private_keys][0m
+[0;37mdebug: /File[/var/lib/puppet/client_data]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/state]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/state/state.yaml]: Autorequiring File[/var/lib/puppet/state][0m
+[0;37mdebug: /File[/var/lib/puppet/clientbucket]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/private]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/public_keys/vm1.pem]: Autorequiring File[/var/lib/puppet/ssl/public_keys][0m
+[0;37mdebug: /File[/var/lib/puppet/state/last_run_report.yaml]: Autorequiring File[/var/lib/puppet/state][0m
+[0;37mdebug: /File[/var/lib/puppet/facts]: Autorequiring File[/var/lib/puppet][0m
+[0;37mdebug: /File[/var/lib/puppet/ssl/certs/vm1.pem]/mode: mode changed '0640' to '0644'[0m
+[0;37mdebug: /File[/var/lib/puppet/state/resources.txt]/mode: mode changed '0644' to '0640'[0m
+[0;37mdebug: /File[/var/lib/puppet/state/state.yaml]/mode: mode changed '0640' to '0660'[0m
+[0;37mdebug: Finishing transaction 70247527387940[0m
+[0;37mdebug: Loaded state in 0.00 seconds[0m
+[0;37mdebug: Loaded state in 0.00 seconds[0m
+[0;32minfo: Applying configuration version '1443538611'[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Install/before: requires Class[Mysql::Server::Config][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Providers/before: requires Anchor[mysql::server::end][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]/before: requires Service[mysqld][0m
+[0;37mdebug: /Stage[main]//Mysql_user[test_user@vm1]/require: requires Class[Mysql::Server][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Service/Service[mysqld]/require: requires Package[mysql-server][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Installdb/before: requires Class[Mysql::Server::Service][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Root_password/before: requires Class[Mysql::Server::Providers][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Installdb/Exec[mysql_install_db]/require: requires Package[mysql-server][0m
+[0;37mdebug: /Stage[main]//Mysql_grant[test_user@vm1/test_mdb.*]/require: requires Class[Mysql::Server][0m
+[0;37mdebug: /Stage[main]/Mysql::Server/Anchor[mysql::server::start]/before: requires Class[Mysql::Server::Install][0m
+[0;37mdebug: /Stage[main]//Mysql_database[test_mdb]/require: requires Class[Mysql::Server][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Config/before: requires Class[Mysql::Server::Installdb][0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Service/before: requires Class[Mysql::Server::Root_password][0m
+[0;37mdebug: /Stage[main]//Mysql_grant[test_user@vm1/test_mdb.*]: Autorequiring Mysql_user[test_user@vm1][0m
+[0;37mdebug: /Schedule[daily]: Skipping device resources because running on a host[0m
+[0;37mdebug: /Schedule[monthly]: Skipping device resources because running on a host[0m
+[0;37mdebug: /Schedule[hourly]: Skipping device resources because running on a host[0m
+[0;37mdebug: /Schedule[never]: Skipping device resources because running on a host[0m
+[0;37mdebug: Prefetching yum resources for package[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/bin/rpm --version'[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/bin/rpm -qa --nosignature --nodigest --qf '%{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}
+''[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/bin/rpm -q mysql-server --nosignature --nodigest --qf %{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}
+'[0m
+[0;37mdebug: Package[mysql-server](provider=yum): Ensuring => present[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/usr/bin/yum -d 0 -e 0 -y install mysql-server'[0m
+[0;37mdebug: Puppet::Type::Package::ProviderYum: Executing '/bin/rpm -q mysql-server --nosignature --nodigest --qf %{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}
+'[0m
+[0;36mnotice: /Stage[main]/Mysql::Server::Install/Package[mysql-server]/ensure: created[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Install/Package[mysql-server]: The container Class[Mysql::Server::Install] will propagate my refresh event[0m
+[0;37mdebug: Class[Mysql::Server::Install]: The container Stage[main] will propagate my refresh event[0m
+[0;37mdebug: Finishing transaction 70247526554820[0m
+[0;32minfo: FileBucket adding {md5}8ace886bbe7e274448bc8bea16d3ead6[0m
+[0;32minfo: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]: Filebucketed /etc/my.cnf to puppet with sum 8ace886bbe7e274448bc8bea16d3ead6[0m
+[0;36mnotice: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]/content: content changed '{md5}8ace886bbe7e274448bc8bea16d3ead6' to '{md5}d0d209eb5ed544658b3f1a72274bc3ed'[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Config/File[mysql-config-file]: The container Class[Mysql::Server::Config] will propagate my refresh event[0m
+[0;36mnotice: /Stage[main]/Mysql::Server::Config/File[/etc/my.cnf.d]/ensure: created[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Config/File[/etc/my.cnf.d]: The container Class[Mysql::Server::Config] will propagate my refresh event[0m
+[0;37mdebug: Class[Mysql::Server::Config]: The container Stage[main] will propagate my refresh event[0m
+[0;37mdebug: Exec[mysql_install_db](provider=posix): Executing 'mysql_install_db --basedir=/usr --defaults-extra-file=/etc/my.cnf --datadir=/var/lib/mysql --user=mysql'[0m
+[0;37mdebug: Executing 'mysql_install_db --basedir=/usr --defaults-extra-file=/etc/my.cnf --datadir=/var/lib/mysql --user=mysql'[0m
+[0;36mnotice: /Stage[main]/Mysql::Server::Installdb/Exec[mysql_install_db]/returns: executed successfully[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Installdb/Exec[mysql_install_db]: The container Class[Mysql::Server::Installdb] will propagate my refresh event[0m
+[0;37mdebug: Class[Mysql::Server::Installdb]: The container Stage[main] will propagate my refresh event[0m
+[0;37mdebug: Service[mysqld](provider=redhat): Executing '/sbin/service mysqld status'[0m
+[0;37mdebug: Puppet::Type::Service::ProviderRedhat: Executing '/sbin/chkconfig mysqld'[0m
+[0;37mdebug: Service[mysqld](provider=redhat): Executing '/sbin/service mysqld start'[0m
+[0;37mdebug: Puppet::Type::Service::ProviderRedhat: Executing '/sbin/chkconfig mysqld'[0m
+[0;37mdebug: Puppet::Type::Service::ProviderRedhat: Executing '/sbin/chkconfig mysqld on'[0m
+[0;36mnotice: /Stage[main]/Mysql::Server::Service/Service[mysqld]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;37mdebug: /Stage[main]/Mysql::Server::Service/Service[mysqld]: The container Class[Mysql::Server::Service] will propagate my refresh event[0m
+[0;32minfo: /Stage[main]/Mysql::Server::Service/Service[mysqld]: Unscheduling refresh on Service[mysqld][0m
+[0;37mdebug: /Schedule[weekly]: Skipping device resources because running on a host[0m
+[0;37mdebug: Class[Mysql::Server::Service]: The container Stage[main] will propagate my refresh event[0m
+[0;37mdebug: Exec[remove install pass](provider=posix): Executing check 'test -f /.mysql_secret'[0m
+[0;37mdebug: Executing 'test -f /.mysql_secret'[0m
+[0;37mdebug: Prefetching mysql resources for mysql_user[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT CONCAT(User, '@',Host) AS User FROM mysql.user'[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT MAX_USER_CONNECTIONS, MAX_CONNECTIONS, MAX_QUESTIONS, MAX_UPDATES, PASSWORD /*!50508 , PLUGIN */ FROM mysql.user WHERE CONCAT(user, '@', host) = 'root@127.0.0.1''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT MAX_USER_CONNECTIONS, MAX_CONNECTIONS, MAX_QUESTIONS, MAX_UPDATES, PASSWORD /*!50508 , PLUGIN */ FROM mysql.user WHERE CONCAT(user, '@', host) = '@localhost''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT MAX_USER_CONNECTIONS, MAX_CONNECTIONS, MAX_QUESTIONS, MAX_UPDATES, PASSWORD /*!50508 , PLUGIN */ FROM mysql.user WHERE CONCAT(user, '@', host) = 'root@localhost''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT MAX_USER_CONNECTIONS, MAX_CONNECTIONS, MAX_QUESTIONS, MAX_UPDATES, PASSWORD /*!50508 , PLUGIN */ FROM mysql.user WHERE CONCAT(user, '@', host) = '@vm1''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT MAX_USER_CONNECTIONS, MAX_CONNECTIONS, MAX_QUESTIONS, MAX_UPDATES, PASSWORD /*!50508 , PLUGIN */ FROM mysql.user WHERE CONCAT(user, '@', host) = 'root@vm1''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -e CREATE USER 'test_user'@'vm1' IDENTIFIED BY PASSWORD '*2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19''[0m
+[0;37mdebug: Puppet::Type::Mysql_user::ProviderMysql: Executing '/usr/bin/mysql -e GRANT USAGE ON *.* TO 'test_user'@'vm1' WITH MAX_USER_CONNECTIONS 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_QUERIES_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0'[0m
+[0;36mnotice: /Stage[main]//Mysql_user[test_user@vm1]/ensure: created[0m
+[0;37mdebug: /Stage[main]//Mysql_user[test_user@vm1]: The container Class[Main] will propagate my refresh event[0m
+[0;37mdebug: Prefetching mysql resources for mysql_database[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: Executing '/usr/bin/mysql -NBe show databases'[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: Executing '/usr/bin/mysql -NBe show variables like '%_database' information_schema'[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: Executing '/usr/bin/mysql -NBe show variables like '%_database' mysql'[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: Executing '/usr/bin/mysql -NBe show variables like '%_database' test'[0m
+[0;37mdebug: Puppet::Type::Mysql_database::ProviderMysql: Executing '/usr/bin/mysql -NBe create database if not exists `test_mdb` character set `utf8` collate `utf8_general_ci`'[0m
+[0;36mnotice: /Stage[main]//Mysql_database[test_mdb]/ensure: created[0m
+[0;37mdebug: /Stage[main]//Mysql_database[test_mdb]: The container Class[Main] will propagate my refresh event[0m
+[0;37mdebug: Prefetching mysql resources for mysql_grant[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe SELECT CONCAT(User, '@',Host) AS User FROM mysql.user'[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe SHOW GRANTS FOR 'root'@'127.0.0.1';'[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe SHOW GRANTS FOR 'root'@'localhost';'[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe SHOW GRANTS FOR 'root'@'vm1';'[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe SHOW GRANTS FOR 'test_user'@'vm1';'[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -e GRANT ALL PRIVILEGES ON `test_mdb`.* TO 'test_user'@'vm1''[0m
+[0;36mnotice: /Stage[main]//Mysql_grant[test_user@vm1/test_mdb.*]/ensure: created[0m
+[0;37mdebug: Puppet::Type::Mysql_grant::ProviderMysql: Executing '/usr/bin/mysql -NBe FLUSH PRIVILEGES'[0m
+[0;37mdebug: /Stage[main]//Mysql_grant[test_user@vm1/test_mdb.*]: The container Class[Main] will propagate my refresh event[0m
+[0;37mdebug: /Schedule[puppet]: Skipping device resources because running on a host[0m
+[0;37mdebug: Class[Main]: The container Stage[main] will propagate my refresh event[0m
+[0;37mdebug: Finishing transaction 70247527290540[0m
+[0;37mdebug: Storing state[0m
+[0;37mdebug: Stored state in 0.01 seconds[0m
+[0;36mnotice: Finished catalog run in 13.29 seconds[0m
+[0;37mdebug: /File[/var/lib/puppet/rrd]/ensure: created[0m
+[0;37mdebug: Finishing transaction 70247539323340[0m
+[0;37mdebug: Received report to process from vm1[0m
+[0;37mdebug: Processing report from vm1 with processor Puppet::Reports::Store[0m
