@@ -1,0 +1,17 @@
+{
+  "README.markdown": "cb46691d59e6208bcf2a9dd912c13720",
+  "Rakefile": "b25325a75a30ae862dd13f2e69ed06aa",
+  "changelog": "96c2dc5d97e4bdac714f0a642a6338ae",
+  "files/web_config": "34d7bd8e20279d5665b30e1852d797c2",
+  "manifests/apache.pp": "2fa2d867ae2ea2816e203b4829493e7a",
+  "manifests/db.pp": "921b267ddeece5d9df7129acfe262f89",
+  "manifests/init.pp": "7a631439952f3c04e2c0e3bd9205f594",
+  "manifests/mysql.pp": "48f73db404aeeb879e1370adc4fa6b5a",
+  "manifests/php.pp": "48de8cfde1f8a7f3cbc8364981489669",
+  "manifests/php5mods.pp": "5dd0c2ea57a595762f93a4937a920afd",
+  "manifests/phpmyadmin.pp": "67ded6da850951739a962daedfd8bfbd",
+  "metadata.json": "44efd1028697671218e69494849f5253",
+  "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+  "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+  "tests/init.pp": "cdca43c3e2de267f51a260027fcd93b2"
+}

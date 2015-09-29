@@ -1,0 +1,11 @@
+# Change Log
+All changes to this project will be documented here.
+
+## [1.1] - 2015-05-25
+### Changed
+- Added ability to create a database and user
+- Added command to ensure webroot exists
+- Moved rootPassword to lamp::init temporarily
+
+### Fixed
+- Various bugs in MySQL
