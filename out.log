@@ -1,0 +1,757 @@
+[0;36mDebug: Runtime environment: ruby_version=1.8.7, run_mode=user, puppet_version=3.8.3[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Loading external facts from /var/lib/puppet/facts.d[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/puppi/lib/facter/last_run.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/puppi/lib/facter/puppi_projects.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/puppi/lib/facter/windows_common_appdata.rb[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/stdlib/lib/facter/puppet_vardir.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/stdlib/lib/facter/pe_version.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/stdlib/lib/facter/root_home.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/stdlib/lib/facter/facter_dot_d.rb[0m
+[0;32mInfo: Loading facts[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/java/lib/facter/java_version.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/java/lib/facter/java_patch_level.rb[0m
+[0;36mDebug: Loading facts from /etc/puppet/modules/java/lib/facter/java_major_version.rb[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: importing '/etc/puppet/modules/jbdeploy/manifests/init.pp' in environment production[0m
+[0;36mDebug: Automatically imported jbdeploy from jbdeploy into production[0m
+[0;36mDebug: importing '/etc/puppet/modules/jbdeploy/manifests/dep.pp' in environment production[0m
+[0;36mDebug: Automatically imported jbdeploy::dep from jbdeploy/dep into production[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Executing '/bin/rpm --version'[0m
+[0;36mDebug: Executing '/bin/rpm -ql rpm'[0m
+[0;36mDebug: Executing '/bin/rpm --version'[0m
+[0;36mDebug: importing '/etc/puppet/modules/java/manifests/init.pp' in environment production[0m
+[0;36mDebug: Automatically imported java from java into production[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Hiera YAML backend starting[0m
+[0;36mDebug: hiera(): Looking up java::java_alternative in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up java::package in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up java::version in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up java::java_alternative_path in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up java::distribution in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: importing '/etc/puppet/modules/java/manifests/params.pp' in environment production[0m
+[0;36mDebug: Automatically imported java::params from java/params into production[0m
+[0;36mDebug: importing '/etc/puppet/modules/java/manifests/config.pp' in environment production[0m
+[0;36mDebug: Automatically imported java::config from java/config into production[0m
+[0;36mDebug: importing '/etc/puppet/modules/jboss/manifests/init.pp' in environment production[0m
+[0;36mDebug: Automatically imported jboss from jboss into production[0m
+[0;36mDebug: importing '/etc/puppet/modules/jboss/manifests/params.pp' in environment production[0m
+[0;36mDebug: Automatically imported jboss::params from jboss/params into production[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::log_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_log_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::data_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_data_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::process_user in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_process_user in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::monitor_target in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_monitor_target in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up monitor_target in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_file_init in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_file_init in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::service in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_service in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::monitor in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_monitor in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up monitor in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::init_script_template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_init_script_template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::log_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_log_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::process in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_process in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::package in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_package in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::version in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_version in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::service_status in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_service_status in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::audit_only in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_audit_only in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up audit_only in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::firewall_src in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_firewall_src in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up firewall_src in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::puppi_helper in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_puppi_helper in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up puppi_helper in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::monitor_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_monitor_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up monitor_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::options in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_options in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::conf_script_template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_conf_script_template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::created_dirname in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_created_dirname in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_file_group in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_file_group in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::source in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_source in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install_dirname in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install_dirname in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install_destination in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install_destination in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::firewall_dst in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_firewall_dst in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up firewall_dst in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::my_class in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_my_class in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::user_gid in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_user_gid in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::protocol in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_protocol in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::puppi in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_puppi in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up puppi in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::bindaddr in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_bindaddr in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install_source in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install_source in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::process_args in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_process_args in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::firewall_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_firewall_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up firewall_tool in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::firewall in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_firewall in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up firewall in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::absent in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_absent in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::service_autorestart in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_service_autorestart in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up service_autorestart in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::mode in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_mode in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::manage_user in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_manage_user in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install_precommand in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install_precommand in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::debug in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_debug in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up debug in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::disableboot in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_disableboot in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::user_uid in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_user_uid in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install_postcommand in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install_postcommand in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::port in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_port in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::pid_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_pid_file in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_file_owner in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_file_owner in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_file_mode in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_file_mode in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::config_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_config_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::disable in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_disable in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_template in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::source_dir_purge in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_source_dir_purge in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::source_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_source_dir in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: hiera(): Looking up jboss::install in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: hiera(): Looking up jboss_install in YAML backend[0m
+[0;36mDebug: hiera(): Looking for data source common[0m
+[0;36mDebug: hiera(): Cannot find datafile /var/lib/hiera/common.yaml, skipping[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: importing '/etc/puppet/modules/jboss/manifests/install.pp' in environment production[0m
+[0;36mDebug: Automatically imported jboss::install from jboss/install into production[0m
+[0;36mDebug: importing '/etc/puppet/modules/jboss/manifests/user.pp' in environment production[0m
+[0;36mDebug: Automatically imported jboss::user from jboss/user into production[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: importing '/etc/puppet/modules/puppi/manifests/init.pp' in environment production[0m
+[0;36mDebug: importing '/etc/puppet/modules/puppi/manifests/netinstall.pp' in environment production[0m
+[0;36mDebug: Automatically imported puppi::netinstall from puppi/netinstall into production[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: importing '/etc/puppet/modules/jboss/manifests/service.pp' in environment production[0m
+[0;36mDebug: Automatically imported jboss::service from jboss/service into production[0m
+[0;36mDebug: Scope(Class[Jboss::Service]): Retrieving template jboss/jboss6.init.erb[0m
+[0;36mDebug: template[/etc/puppet/modules/jboss/templates/jboss6.init.erb]: Bound template variables for /etc/puppet/modules/jboss/templates/jboss6.init.erb in 0.00 seconds[0m
+[0;36mDebug: template[/etc/puppet/modules/jboss/templates/jboss6.init.erb]: Interpolated template /etc/puppet/modules/jboss/templates/jboss6.init.erb in 0.00 seconds[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Adding relationship from Anchor[java::begin:] to Package[java] with 'before'[0m
+[0;36mDebug: Adding relationship from Package[java] to Class[Java::Config] with 'before'[0m
+[0;36mDebug: Adding relationship from Class[Java::Config] to Anchor[java::end] with 'before'[0m
+[mNotice: Compiled catalog for vm1 in environment production in 1.36 seconds[0m
+[0;36mDebug: Puppet::Type::Package::ProviderFreebsd: file /usr/sbin/pkg_add does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderOpkg: file opkg does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPacman: file /usr/bin/pacman does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderUp2date: file /usr/sbin/up2date-nox does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderApt: file /usr/bin/apt-get does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderHpux: file /usr/sbin/swinstall does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderAptrpm: file apt-get does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderFink: file /sw/bin/fink does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPkgin: file pkgin does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPorts: file /usr/local/sbin/portversion does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderUrpmi: file urpmi does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderAix: file /usr/sbin/installp does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderDpkg: file /usr/bin/dpkg does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderNim: file /usr/sbin/nimclient does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPkg: file /usr/bin/pkg does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPortupgrade: file /usr/local/sbin/portversion does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderRug: file /usr/bin/rug does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderZypper: file /usr/bin/zypper does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderOpenbsd: file pkg_add does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderSun: file /usr/sbin/pkgadd does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderPortage: file /usr/bin/emerge does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderSunfreeware: file pkg-get does not exist[0m
+[0;36mDebug: Puppet::Type::Package::ProviderAptitude: file /usr/bin/aptitude does not exist[0m
+[0;36mDebug: Puppet::Type::User::ProviderDirectoryservice: file /usr/bin/dsimport does not exist[0m
+[0;36mDebug: Puppet::Type::User::ProviderUser_role_add: file roledel does not exist[0m
+[0;36mDebug: Puppet::Type::User::ProviderPw: file pw does not exist[0m
+[0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+[0;36mDebug: Puppet::Type::User::ProviderLdap: feature ldap is missing[0m
+[0;36mDebug: Puppet::Type::Service::ProviderRunit: file /usr/bin/sv does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderDaemontools: file /usr/bin/svc does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderDebian: file /usr/sbin/update-rc.d does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderGentoo: file /sbin/rc-update does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderOpenrc: file /bin/rc-status does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderLaunchd: file /bin/launchctl does not exist[0m
+[0;36mDebug: Puppet::Type::Service::ProviderSystemd: file systemctl does not exist[0m
+[0;36mDebug: Creating default schedules[0m
+[0;36mDebug: Puppet::Type::Group::ProviderDirectoryservice: file /usr/bin/dscl does not exist[0m
+[0;36mDebug: Puppet::Type::Group::ProviderPw: file pw does not exist[0m
+[0;36mDebug: Failed to load library 'ldap' for feature 'ldap'[0m
+[0;36mDebug: Puppet::Type::Group::ProviderLdap: feature ldap is missing[0m
+[0;36mDebug: Using settings: adding file resource 'hostprivkey': 'File[/var/lib/puppet/ssl/private_keys/vm1.pem]{:loglevel=>:debug, :group=>"puppet", :ensure=>:file, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"640", :path=>"/var/lib/puppet/ssl/private_keys/vm1.pem"}'[0m
+[0;36mDebug: Using settings: adding file resource 'publickeydir': 'File[/var/lib/puppet/ssl/public_keys]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"755", :path=>"/var/lib/puppet/ssl/public_keys"}'[0m
+[0;36mDebug: Using settings: adding file resource 'plugindest': 'File[/var/lib/puppet/lib]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :path=>"/var/lib/puppet/lib"}'[0m
+[0;36mDebug: Using settings: adding file resource 'clientbucketdir': 'File[/var/lib/puppet/clientbucket]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/clientbucket"}'[0m
+[0;36mDebug: Using settings: adding file resource 'statedir': 'File[/var/lib/puppet/state]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :mode=>"1755", :path=>"/var/lib/puppet/state"}'[0m
+[0;36mDebug: Using settings: adding file resource 'localcacert': 'File[/var/lib/puppet/ssl/certs/ca.pem]{:loglevel=>:debug, :group=>"puppet", :ensure=>:file, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"644", :path=>"/var/lib/puppet/ssl/certs/ca.pem"}'[0m
+[0;36mDebug: Using settings: adding file resource 'confdir': 'File[/etc/puppet]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :path=>"/etc/puppet"}'[0m
+[0;36mDebug: Using settings: adding file resource 'privatekeydir': 'File[/var/lib/puppet/ssl/private_keys]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/ssl/private_keys"}'[0m
+[0;36mDebug: Using settings: adding file resource 'pluginfactdest': 'File[/var/lib/puppet/facts.d]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :path=>"/var/lib/puppet/facts.d"}'[0m
+[0;36mDebug: Using settings: adding file resource 'graphdir': 'File[/var/lib/puppet/state/graphs]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :path=>"/var/lib/puppet/state/graphs"}'[0m
+[0;36mDebug: Using settings: adding file resource 'preview_outputdir': 'File[/var/lib/puppet/preview]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/preview"}'[0m
+[0;36mDebug: Using settings: adding file resource 'rundir': 'File[/var/run/puppet]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"755", :path=>"/var/run/puppet"}'[0m
+[0;36mDebug: Using settings: adding file resource 'ssldir': 'File[/var/lib/puppet/ssl]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"771", :path=>"/var/lib/puppet/ssl"}'[0m
+[0;36mDebug: Using settings: adding file resource 'client_datadir': 'File[/var/lib/puppet/client_data]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/client_data"}'[0m
+[0;36mDebug: Using settings: adding file resource 'hostpubkey': 'File[/var/lib/puppet/ssl/public_keys/vm1.pem]{:loglevel=>:debug, :group=>"puppet", :ensure=>:file, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"644", :path=>"/var/lib/puppet/ssl/public_keys/vm1.pem"}'[0m
+[0;36mDebug: Using settings: adding file resource 'logdir': 'File[/var/log/puppet]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"750", :path=>"/var/log/puppet"}'[0m
+[0;36mDebug: Using settings: adding file resource 'requestdir': 'File[/var/lib/puppet/ssl/certificate_requests]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"755", :path=>"/var/lib/puppet/ssl/certificate_requests"}'[0m
+[0;36mDebug: Using settings: adding file resource 'vardir': 'File[/var/lib/puppet]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :path=>"/var/lib/puppet"}'[0m
+[0;36mDebug: Using settings: adding file resource 'privatedir': 'File[/var/lib/puppet/ssl/private]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/ssl/private"}'[0m
+[0;36mDebug: Using settings: adding file resource 'certdir': 'File[/var/lib/puppet/ssl/certs]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"755", :path=>"/var/lib/puppet/ssl/certs"}'[0m
+[0;36mDebug: Using settings: adding file resource 'clientyamldir': 'File[/var/lib/puppet/client_yaml]{:loglevel=>:debug, :ensure=>:directory, :links=>:follow, :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/client_yaml"}'[0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/certs]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/private]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/private_keys]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/certificate_requests]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;36mDebug: /File[/var/lib/puppet/clientbucket]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/preview]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/client_yaml]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/state]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/facts.d]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/lib]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/public_keys/vm1.pem]: Autorequiring File[/var/lib/puppet/ssl/public_keys][0m
+[0;36mDebug: /File[/var/lib/puppet/state/graphs]: Autorequiring File[/var/lib/puppet/state][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/public_keys]: Autorequiring File[/var/lib/puppet/ssl][0m
+[0;36mDebug: /File[/var/lib/puppet/client_data]: Autorequiring File[/var/lib/puppet][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/certs/ca.pem]: Autorequiring File[/var/lib/puppet/ssl/certs][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/private_keys/vm1.pem]: Autorequiring File[/var/lib/puppet/ssl/private_keys][0m
+[0;36mDebug: /File[/var/lib/puppet/ssl/private_keys/vm1.pem]/mode: mode changed '0644' to '0640'[0m
+[0;36mDebug: Finishing transaction 69950327483600[0m
+[0;36mDebug: /Stage[main]/Jbdeploy/Exec[install]/require: requires Class[Java][0m
+[0;36mDebug: /Stage[main]/Jbdeploy/Exec[install]/require: requires Class[Jboss][0m
+[0;36mDebug: /Stage[main]/Jbdeploy/Exec[install]/require: requires Package[wget][0m
+[0;36mDebug: /Stage[main]/Jbdeploy/Exec[install]/require: requires Package[unzip][0m
+[0;36mDebug: /Stage[main]/Jboss::Service/Service[jboss]/require: requires File[jboss.init][0m
+[0;36mDebug: /Stage[main]/Jboss::Service/File[jboss.init]/require: requires Class[Jboss::Install][0m
+[0;36mDebug: /Stage[main]/Jboss::Service/File[jboss.init]/notify: subscribes to Service[jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/require: requires Class[Jboss::User][0m
+[0;36mDebug: /Stage[main]/Jboss/require: requires Class[Jboss::Install][0m
+[0;36mDebug: /Stage[main]/Jboss/require: requires Class[Jboss::Service][0m
+[0;36mDebug: /Stage[main]/Java::Config/before: requires Anchor[java::end][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]/require: requires Exec[Retrieve http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip in /var/tmp - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]/require: requires Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]/subscribe: subscribes to Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]/require: requires Exec[Retrieve http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip in /var/tmp - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]/notify: subscribes to Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]/require: requires Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss][0m
+[0;36mDebug: /Stage[main]/Java/Package[java]/before: requires Class[Java::Config][0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/require: requires User[jboss][0m
+[0;36mDebug: /Stage[main]/Java/Anchor[java::begin:]/before: requires Package[java][0m
+[0;32mInfo: Applying configuration version '1443732666'[0m
+[0;36mDebug: Prefetching yum resources for package[0m
+[0;36mDebug: Executing '/bin/rpm --version'[0m
+[0;36mDebug: Executing '/bin/rpm -qa --nosignature --nodigest --qf '%{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}\n''[0m
+[0;36mDebug: Executing '/usr/sbin/useradd -c jboss user -d /opt/jboss -p ! -s /bin/bash -M jboss'[0m
+[mNotice: /Stage[main]/Jboss::User/User[jboss]/ensure: created[0m
+[0;36mDebug: /Stage[main]/Jboss::User/User[jboss]: The container Class[Jboss::User] will propagate my refresh event[0m
+[0;36mDebug: Class[Jboss::User]: The container Stage[main] will propagate my refresh event[0m
+[mNotice: /Stage[main]/Jboss::Install/File[jboss_link]/ensure: created[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/File[jboss_link]: The container Class[Jboss::Install] will propagate my refresh event[0m
+[0;36mDebug: Exec[Retrieve http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip in /var/tmp - netinstall_jboss](provider=posix): Executing 'wget  http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip'[0m
+[0;36mDebug: Executing 'wget  http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip'[0m
+[mNotice: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Retrieve http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip in /var/tmp - netinstall_jboss]/returns: executed successfully[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Retrieve http://download.jboss.org/jbossas/6.1/jboss-as-distribution-6.1.0.Final.zip in /var/tmp - netinstall_jboss]: The container Puppi::Netinstall[netinstall_jboss] will propagate my refresh event[0m
+[0;36mDebug: Executing '/bin/rpm -q unzip --nosignature --nodigest --qf %{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}\n'[0m
+[0;36mDebug: Executing '/usr/bin/yum -d 0 -e 0 -y list unzip'[0m
+[0;36mDebug: Package[unzip](provider=yum): Ensuring => present[0m
+[0;36mDebug: Executing '/usr/bin/yum -d 0 -e 0 -y install unzip'[0m
+[mNotice: /Stage[main]/Jbdeploy::Dep/Package[unzip]/ensure: created[0m
+[0;36mDebug: /Stage[main]/Jbdeploy::Dep/Package[unzip]: The container Class[Jbdeploy::Dep] will propagate my refresh event[0m
+[0;36mDebug: Class[Jbdeploy::Dep]: The container Stage[main] will propagate my refresh event[0m
+[0;36mDebug: Executing '/bin/rpm -q java-1.7.0-openjdk-devel --nosignature --nodigest --qf %{NAME} %|EPOCH?{%{EPOCH}}:{0}| %{VERSION} %{RELEASE} %{ARCH}\n'[0m
+[0;36mDebug: Executing '/usr/bin/yum -d 0 -e 0 -y list java-1.7.0-openjdk-devel'[0m
+[0;36mDebug: Package[java](provider=yum): Ensuring => present[0m
+[0;36mDebug: Executing '/usr/bin/yum -d 0 -e 0 -y install java-1.7.0-openjdk-devel'[0m
+[mNotice: /Stage[main]/Java/Package[java]/ensure: created[0m
+[0;36mDebug: /Stage[main]/Java/Package[java]: The container Class[Java] will propagate my refresh event[0m
+[0;36mDebug: Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss](provider=posix): Executing check 'ls /opt/jboss-6.1.0.Final'[0m
+[0;36mDebug: Executing 'ls /opt/jboss-6.1.0.Final'[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]/unless: ls: cannot access /opt/jboss-6.1.0.Final: No such file or directory[0m
+[0;36mDebug: Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss](provider=posix): Executing 'mkdir -p /opt && cd /opt && unzip /var/tmp/jboss-as-distribution-6.1.0.Final.zip '[0m
+[0;36mDebug: Executing 'mkdir -p /opt && cd /opt && unzip /var/tmp/jboss-as-distribution-6.1.0.Final.zip '[0m
+[mNotice: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]/returns: executed successfully[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]: The container Puppi::Netinstall[netinstall_jboss] will propagate my refresh event[0m
+[0;32mInfo: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]: Scheduling refresh of Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss][0m
+[0;32mInfo: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Extract jboss-as-distribution-6.1.0.Final.zip from /var/tmp - netinstall_jboss]: Scheduling refresh of Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss][0m
+[0;36mDebug: Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss](provider=posix): Executing 'chown -R jboss:jboss /opt/jboss-6.1.0.Final'[0m
+[0;36mDebug: Executing 'chown -R jboss:jboss /opt/jboss-6.1.0.Final'[0m
+[mNotice: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]: Triggered 'refresh' from 1 events[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[Chown jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]: The container Puppi::Netinstall[netinstall_jboss] will propagate my refresh event[0m
+[0;36mDebug: Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss](provider=posix): Executing 'chown -R jboss /opt/jboss-6.1.0.Final'[0m
+[0;36mDebug: Executing 'chown -R jboss /opt/jboss-6.1.0.Final'[0m
+[mNotice: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]: Triggered 'refresh' from 1 events[0m
+[0;36mDebug: /Stage[main]/Jboss::Install/Puppi::Netinstall[netinstall_jboss]/Exec[PostExtract jboss-as-distribution-6.1.0.Final.zip in /opt - netinstall_jboss]: The container Puppi::Netinstall[netinstall_jboss] will propagate my refresh event[0m
+[0;36mDebug: Puppi::Netinstall[netinstall_jboss]: The container Class[Jboss::Install] will propagate my refresh event[0m
+[0;36mDebug: Class[Jboss::Install]: The container Stage[main] will propagate my refresh event[0m
+[mNotice: /Stage[main]/Jboss::Service/File[jboss.init]/ensure: created[0m
+[0;32mInfo: /Stage[main]/Jboss::Service/File[jboss.init]: Scheduling refresh of Service[jboss][0m
+[0;36mDebug: /Stage[main]/Jboss::Service/File[jboss.init]: The container Class[Jboss::Service] will propagate my refresh event[0m
+[0;36mDebug: Executing '/sbin/service jboss status'[0m
+[0;36mDebug: Executing '/sbin/chkconfig jboss'[0m
+[0;36mDebug: Executing '/sbin/service jboss start'[0m
+[0;36mDebug: Executing '/sbin/chkconfig jboss'[0m
+[0;36mDebug: Executing '/sbin/chkconfig --add jboss'[0m
+[0;36mDebug: Executing '/sbin/chkconfig jboss on'[0m
+[mNotice: /Stage[main]/Jboss::Service/Service[jboss]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mDebug: /Stage[main]/Jboss::Service/Service[jboss]: The container Class[Jboss::Service] will propagate my refresh event[0m
+[0;32mInfo: /Stage[main]/Jboss::Service/Service[jboss]: Unscheduling refresh on Service[jboss][0m
+[0;36mDebug: Class[Jboss::Service]: The container Stage[main] will propagate my refresh event[0m
+[0;36mDebug: Class[Java]: The container Stage[main] will propagate my refresh event[0m
+[0;36mDebug: Exec[install](provider=posix): Executing '/usr/bin/wget -c http://www.cumulogic.com/download/Apps/testweb.zip -P /tmp && unzip -o /tmp/testweb.zip -d /opt/jboss/server/default/deploy/ '[0m
+[0;36mDebug: Executing '/usr/bin/wget -c http://www.cumulogic.com/download/Apps/testweb.zip -P /tmp && unzip -o /tmp/testweb.zip -d /opt/jboss/server/default/deploy/ '[0m
+[mNotice: /Stage[main]/Jbdeploy/Exec[install]/returns: executed successfully[0m
+[0;36mDebug: /Stage[main]/Jbdeploy/Exec[install]: The container Class[Jbdeploy] will propagate my refresh event[0m
+[0;36mDebug: Class[Jbdeploy]: The container Stage[main] will propagate my refresh event[0m
+[0;36mDebug: Finishing transaction 69950328738640[0m
+[0;36mDebug: Storing state[0m
+[0;32mInfo: Creating state file /var/lib/puppet/state/state.yaml[0m
+[0;36mDebug: Stored state in 0.03 seconds[0m
+[mNotice: Finished catalog run in 88.73 seconds[0m
+[0;36mDebug: Using settings: adding file resource 'rrddir': 'File[/var/lib/puppet/rrd]{:loglevel=>:debug, :group=>"puppet", :ensure=>:directory, :links=>:follow, :owner=>"puppet", :backup=>false, :mode=>"750", :path=>"/var/lib/puppet/rrd"}'[0m
+[0;36mDebug: /File[/var/lib/puppet/rrd]/ensure: created[0m
+[0;36mDebug: Finishing transaction 69950327080560[0m
+[0;36mDebug: Received report to process from vm1[0m
+[0;36mDebug: Evicting cache entry for environment 'production'[0m
+[0;36mDebug: Caching environment 'production' (ttl = 0 sec)[0m
+[0;36mDebug: Processing report from vm1 with processor Puppet::Reports::Store[0m
