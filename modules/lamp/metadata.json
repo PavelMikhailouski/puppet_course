@@ -1,0 +1,33 @@
+{
+  "name": "darkmantle-lamp",
+  "version": "1.1.0",
+  "author": "David Hopson",
+  "summary": "LAMP Stack using Apache and PHP5",
+  "license": "Apache-2.0",
+  "source": "https://github.com/darkmantle/puppet-lamp",
+  "project_page": "https://github.com/darkmantle/puppet-lamp",
+  "issues_url": "https://github.com/darkmantle/puppet-lamp/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04",
+        "14.10, 15.04"
+      ]
+    }
+  ],
+  "project-page": "https://forge.puppetlabs.com/darkmantle/lamp",
+  "tags": [
+    "apache",
+    "mysql",
+    "phpmyadmin",
+    "linux",
+    "lamp",
+    "webserver"
+  ],
+  "dependencies": [
+  
+  ]
+}

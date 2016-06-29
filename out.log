@@ -1,0 +1,98 @@
+[0;32minfo: Caching certificate for vm1[0m
+[0;32minfo: Caching certificate_revocation_list for ca[0m
+[0;32minfo: Caching catalog for vm1[0m
+[0;32minfo: Applying configuration version '1443527121'[0m
+[0;36mnotice: /Stage[main]/Tmux/File[/etc/tmux.conf]/ensure: defined content as '{md5}b9013421d824067868e07d82599a0a73'[0m
+[0;36mnotice: /Stage[main]/Ntp::Install/Package[ntp]/ensure: created[0m
+[0;36mnotice: /Stage[main]/Ntp::Config/File[/etc/ntp.conf]/content: 
+--- /etc/ntp.conf	2015-04-28 06:11:52.000000000 -0400
++++ /tmp/puppet-file20150929-7721-1h9p25s-0	2015-09-29 08:41:33.455009566 -0400
+@@ -1,53 +1,35 @@
+-# For more information about this file, see the man pages
+-# ntp.conf(5), ntp_acc(5), ntp_auth(5), ntp_clock(5), ntp_misc(5), ntp_mon(5).
++# ntp.conf: Managed by puppet.
++#
++# Enable next tinker options:
++# panic - keep ntpd from panicking in the event of a large clock skew
++# when a VM guest is suspended and resumed;
++# stepout - allow ntpd change offset faster
++tinker panic 0
+ 
+-driftfile /var/lib/ntp/drift
+ 
+ # Permit time synchronization with our time source, but do not
+ # permit the source to query or modify the service on this system.
+ restrict default kod nomodify notrap nopeer noquery
+ restrict -6 default kod nomodify notrap nopeer noquery
+-
+-# Permit all access over the loopback interface.  This could
+-# be tightened as well, but to do so would effect some of
+-# the administrative functions.
+-restrict 127.0.0.1 
++restrict 127.0.0.1
+ restrict -6 ::1
+ 
+-# Hosts on local network are less restricted.
+-#restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap
+ 
+-# Use public servers from the pool.ntp.org project.
+-# Please consider joining the pool (http://www.pool.ntp.org/join.html).
+-server 0.centos.pool.ntp.org iburst
+-server 1.centos.pool.ntp.org iburst
+-server 2.centos.pool.ntp.org iburst
+-server 3.centos.pool.ntp.org iburst
+-
+-#broadcast 192.168.1.255 autokey	# broadcast server
+-#broadcastclient			# broadcast client
+-#broadcast 224.0.1.1 autokey		# multicast server
+-#multicastclient 224.0.1.1		# multicast client
+-#manycastserver 239.255.254.254		# manycast server
+-#manycastclient 239.255.254.254 autokey # manycast client
+-
+-# Enable public key cryptography.
+-#crypto
+-
+-includefile /etc/ntp/crypto/pw
+-
+-# Key file containing the keys and key identifiers used when operating
+-# with symmetric key cryptography. 
+-keys /etc/ntp/keys
+-
+-# Specify the key identifiers which are trusted.
+-#trustedkey 4 8 42
+ 
+-# Specify the key identifier to use with the ntpdc utility.
+-#requestkey 8
++# Set up servers for ntpd with next options:
++# server - IP address or DNS name of upstream NTP server
++# iburst - allow send sync packages faster if upstream unavailable
++# prefer - select preferrable server
++# minpoll - set minimal update frequency
++# maxpoll - set maximal update frequency
++server 0.centos.pool.ntp.org
++server 1.centos.pool.ntp.org
++server 2.centos.pool.ntp.org
++
++
++# Driftfile.
++driftfile /var/lib/ntp/drift
++
++
+ 
+-# Specify the key identifier to use with the ntpq utility.
+-#controlkey 8
+ 
+-# Enable writing of statistics records.
+-#statistics clockstats cryptostats loopstats peerstats
+[0m
+[0;32minfo: FileBucket adding {md5}7fda24f62b1c7ae951db0f746dc6e0cc[0m
+[0;32minfo: /Stage[main]/Ntp::Config/File[/etc/ntp.conf]: Filebucketed /etc/ntp.conf to puppet with sum 7fda24f62b1c7ae951db0f746dc6e0cc[0m
+[0;36mnotice: /Stage[main]/Ntp::Config/File[/etc/ntp.conf]/content: content changed '{md5}7fda24f62b1c7ae951db0f746dc6e0cc' to '{md5}ff26b20aa0c9fed35515afbcbf7190b0'[0m
+[0;32minfo: Class[Ntp::Config]: Scheduling refresh of Class[Ntp::Service][0m
+[0;32minfo: Class[Ntp::Service]: Scheduling refresh of Service[ntp][0m
+[0;36mnotice: /Stage[main]/Tmux/Package[tmux]/ensure: created[0m
+[0;36mnotice: /Stage[main]/Ntp::Service/Service[ntp]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;32minfo: /Stage[main]/Ntp::Service/Service[ntp]: Unscheduling refresh on Service[ntp][0m
+[0;36mnotice: /Stage[main]/Git/Package[git]/ensure: created[0m
+[0;32minfo: Creating state file /var/lib/puppet/state/state.yaml[0m
+[0;36mnotice: Finished catalog run in 37.90 seconds[0m
